@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PADARIA SONHO REAL</title>
+    <link rel="stylesheet" href="/static/output.css">
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-100">
+    <header class="align-items-center mb-8 ">
+      <nav class="flex justify-between bg_principal text-white items-center">
+        <a href="/" class="font-bold px-3 py-2 letter-spacing">
+          <img src="../../static/imgs/logo.png" class="imagem_logo">
+        </a>        
+        <div class="flex mr-4 space-x-4">
+          <a href="/" class="nav-link text-secondary">
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+            </svg>
+            Produtos
+          </a>
+          <a href="/cadastroProduto" class="nav-link text-white">
+            <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5z"/>
+            </svg>
+            Cadastrar
+          </a>
+        </div>        
+      </nav>
+    </header>
+
+    <main class="flex-grow mt-8 mb-8">
+      {{{body}}}
+    </main>
+
+    <footer class="bg-amber-900 text-white text-center py-4">
+      <div class="flex gap-3 items-center ml-3">
+        <img src="../../static/imgs/logo.png" alt="logo" class="w-36">
+        <p>© 2024 SONHO REAL. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

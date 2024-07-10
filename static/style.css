@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: #f7efcd;
+}
+
+.letter-spacing {
+    letter-spacing: 0.25rem; /* Equivalente a 4 pixels */
+}
+
+.imagem_logo{
+    width: 150px;
+    height: 110px;
+}
+
+.bg_principal{
+    background-color: #AF7A4A;
+}
+
+
+.cor_fontPrincipal{
+    color: white;
+    font-weight: 500;
+}
+
+
+.expanded {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    position: fixed;
+    left: 50%; /* Define a margem esquerda como 50% da largura da tela */
+    top: 50%; /* Mantém o elemento centralizado verticalmente */
+    transform: translate(-50%, -50%); /* Move o elemento de volta em 50% da sua própria largura e altura, centrando-o completamente */
+    width: 80vw;
+    height: 80vh;
+    z-index: 9999;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: opacity 0.3s ease-in-out; /* Transição de opacidade */
+}
+
+.max-w-md.expanded {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 80vw;
+    height: 80vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.max-w-md.expanded .md {
+    flex-direction: column; /* Altera a direção do layout para coluna */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.max-w-md.expanded img {
+    width: 60%;
+    height: 60%;
+}

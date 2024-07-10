@@ -1,0 +1,27 @@
+<main>
+  <div class="container mx-auto">
+    <div class="flex flex-wrap justify-center gap-5">
+      {{#each data}}
+          <div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div class="md:flex">
+              <div class="md:shrink-0">
+                <img id="imagem-servico" class="h-48 w-full object-cover md:h-full md:w-48" src="/static/imgs/imgs_bnc/{{imagem}}" alt="{{imagem}}">
+              </div>
+              <div class="p-8 max-w-96">
+                <div class="flex justify-end gap-10 mb-5">
+                  <button class="bg_principal p-2 rounded-md text-white"><a href="/editar/{{id}}">Editar</a></button>
+                  <button class="bg-red-500 p-2 rounded-md text-white"><a href="/excluir/{{id}}">Excluir</a></button>
+                </div>
+                <div class="uppercase text-amber-900 text-xl font-semibold">{{nome}}</div>
+                <a href="#" class="block mt-1 text-base font-medium text-amber-900 hover:underline">Descrição</a>
+                <p class="mt-2 text-amber-900 text-justify">{{descricao}}</p>  
+                <p class="mt-2 text-amber-800 font-semibold text-end">R$ {{preco}}</p>  
+              </div>
+            </div>
+          </div>      
+      {{/each}}
+    </div>
+  </div>
+</main>
+
+    
