@@ -1,4 +1,4 @@
-Projeto utilizando nodejs/handlebars/tailwind onde simula um catalogo de uma padaria (tendo a possibilidade de realizar o CRUD dos produtos)
+Projeto utilizando nodejs/handlebars/tailwind e firebase, simulando um catalogo de uma padaria,  (tendo a possibilidade de realizar o CRUD dos produtos)
 
 VISÃO DA TELA DE CADASTRO
 ![Captura de Tela da Tela Inicial](./imgs_preview_site/img-cadastro.PNG)
